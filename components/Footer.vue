@@ -1,13 +1,20 @@
 <script setup>
     import CopyrightIcon from '~icons/mdi/copyright'
     import LinkedinIcon from '~icons/logos/linkedin-icon'
+    import GithubIcon from '~icons/logos/github-icon'
 
     const year = new Date().getFullYear()
 
     const socialLinks = [
         {
             link: 'https://www.linkedin.com/in/jasperbloem/',
-            icon: LinkedinIcon
+            icon: LinkedinIcon,
+            class: 'linkedin-icon'
+        },
+        {
+            link: 'https://github.com/jasperbloem',
+            icon: GithubIcon,
+            class: 'github-icon'
         }
     ]
 </script>
@@ -19,14 +26,11 @@
                 <CopyrightIcon /> Jasper Bloem, {{ year }}
             </p>
             <div class="social-links">
-                <a v-for="item in socialLinks" :href="item.link">
-
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/jasperbloem/" target="_blank"
-                    class="p-2 font-semibold text-white inline-flex items-center rounded-full text-center w-auto self-center mt-2"
+                <a v-for="item in socialLinks"
+                   :href="item.link"
+                   target="_blank"
                 >
-                    <linkedin-icon />
+                    <component :is="item.icon" :class="item.class"/>
                 </a>
             </div>
         </div>
