@@ -46,5 +46,11 @@ export default defineNuxtConfig({
                 autoInstall: true
             })
         ]
+    },
+    runtimeConfig: {
+        public: {
+            google_analytics_id: process.env.google_analytics_id,
+            production_mode: process.env.is_production
+        }
     }
 })
