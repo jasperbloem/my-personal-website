@@ -348,4 +348,16 @@ footer .social-links svg:hover {
   }
 }
 
+.cookieControl__ModalContent {
+  overflow: hidden !important;
+}
+.cookieControl__BarButtons button {
+  font-size: 14px !important;
+}
+.cookieControl button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */
