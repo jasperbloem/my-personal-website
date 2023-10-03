@@ -12,7 +12,17 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/color-mode',
         '@nuxtjs/i18n',
-        '@dargmuesli/nuxt-cookie-control'
+        '@dargmuesli/nuxt-cookie-control',
+        [
+            '@nuxtjs/google-fonts',
+            {
+                families: {
+                    'Open+Sans': true,
+                    'Outfit': [400, 500, 600, 700, 800, 900],
+                    'Unica One': [400, 500, 600, 700, 800, 900]
+                },
+            },
+        ],
     ],
     cookieControl: {
         colors: {
