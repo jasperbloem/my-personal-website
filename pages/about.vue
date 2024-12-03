@@ -14,7 +14,7 @@
         {
             title: 'Roamers',
             imgSrc: '/img/roamers-homepage.jpg',
-            to: 'https://roamers.nl/',
+            to: null,
             tags: [
                 'Laravel',
                 'Vue',
@@ -24,11 +24,20 @@
         {
             title: 'Subfee',
             imgSrc: '/img/subfee-creator-dashboard.png',
-            to: 'https://subfee.nl/',
+            to: null,
             tags: [
                 'Laravel',
                 'React',
                 'AWS S3 & EC2'
+            ]
+        },
+        {
+            title: 'Komnaarhoorn',
+            imgSrc: '/img/kom-naar-hoorn.png',
+            to: 'https://komnaarhoorn.nl/',
+            tags: [
+                'Tailwind',
+                'Alpine.js',
             ]
         },
     ]
